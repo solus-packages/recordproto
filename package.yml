@@ -1,0 +1,18 @@
+name        : recordproto
+version     : 1.14.2
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/recordproto-1.14.2.tar.gz : 485f792570dd7afe49144227f325bf2827bc7d87aae6a8ab6c1de2b06b1c68c5
+license     :
+    - MIT
+summary     : X Record Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This extension defines a protocol for the recording and playback of user actions in the X Window System.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
